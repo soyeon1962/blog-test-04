@@ -1,0 +1,120 @@
+/*common*/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+  background-color: #3FA9A9;
+}
+
+/*app.js*/
+.wrap{
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap .card{
+  width: 550px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #C0C0C0;
+  position: relative;
+}
+
+.wrap .backgroundLine{
+  position: absolute;
+}
+
+.wrap .cardTitle{
+  width: 538px;
+  height: 30px;
+  background: linear-gradient(90deg, #0055D4 0%, #010088 100%);
+  padding: 0 10px;
+  color: #fff;
+  line-height: 30px;
+  margin: 6px 0;
+  position: relative;
+}
+
+.wrap .button01{
+  position: absolute;
+  top: 3px;
+  right: 55px;
+  cursor: pointer;
+}
+
+.wrap .button02{
+  position: absolute;
+  top: 3px;
+  right: 29px;
+  cursor: pointer;
+}
+
+.wrap .button03{
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  cursor: pointer;
+}
+
+.wrap input{
+  width: 450px;
+  height: 40px;
+  margin: 10px 6px 15px 0;
+  border: none;
+}
+
+.wrap .add{
+  height: 40px;
+  width: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+/*TodoList.js*/
+.TodoList{
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+/*TodoItem.js*/
+.TodoItem span{
+  font-size: 20px;
+  color: black;
+}
+
+.TodoItem.completed span{
+  text-decoration: line-through;
+  color: gray;
+}
+
+.TodoItem .remove{
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  
+}
+
+.content-wrap{
+  text-align: center;
+  z-index: 10;
+  width: 526px;
+  height: 549px;
+  position: relative;
+}
+
+.backgroundInnerLine{
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+ul li{
+  list-style: none;
+}
